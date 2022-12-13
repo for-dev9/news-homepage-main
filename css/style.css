@@ -1,0 +1,53 @@
+:root {
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayish-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter';
+  font-size: 15px;
+  background-color: var(--Off-white);
+}
+
+.container {
+  height: 100%;
+}
+
+.navBar {
+  display: flex;
+}
+
+.content {
+  width: 1110px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.content .left {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  background-color: oldlace;
+}
+
+.content .left .left {
+  width: 50%;
+}
+
+.content .right {
+  background-color: blueviolet;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
+}
