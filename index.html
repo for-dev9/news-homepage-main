@@ -26,23 +26,79 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <!-- Home New Popular Trending Categories The Bright Future of Web 3.0? We dive
-    into the next evolution of the web that claims to put the power of the
-    platforms back into the hands of the people. But is it really fulfilling its
-    promise? Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars
-    ever catch up to EVs? The Downsides of AI Artistry What are the possible
-    adverse effects of on-demand AI image generation? Is VC Funding Drying Up?
-    Private funding by VC firms is down 50% YOY. We take a look at what that
-    means. 01 Reviving Retro PCs What happens when old PCs are given modern
-    upgrades? 02 Top 10 Laptops of 2022 Our best picks for various needs and
-    budgets. 03 The Growth of Gaming How the pandemic has sparked fresh
-    opportunities. -->
+    <main class="main">
+      <div class="container">
+        <nav class="header">
+          <div class="logo">
+            <img src="/assets/images/logo.svg" />
+          </div>
+          <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </div>
+        </nav>
 
-    <main class="container">
-      <div class="navBar">bar</div>
-      <div class="content">
-        <div class="left">Left</div>
-        <div class="right">Right</div>
+        <section class="content">
+          <div class="headline">
+            <picture>
+              <source
+                media="(min-width:500px)"
+                srcset="/assets/images/image-web-3-desktop.jpg"
+              />
+              <img src="/assets/images/image-web-3-mobile.jpg" alt="news" />
+            </picture>
+
+            <h1>The Bright Future of Web 3.0?</h1>
+            <p>
+              We dive into the next evolution of the web that claims to put the
+              power of the platforms back into the hands of the people. But is
+              it really fulfilling its promise?
+              <button class="btn">READ MORE</button>
+            </p>
+          </div>
+
+          <div class="aside">
+            <div class="detail">
+              <h1>New</h1>
+              <h3>Hydrogen VS Electric Cars</h3>
+              Will hydrogen-fueled cars ever catch up to EVs?
+
+              <hr />
+
+              <h3>The Downsides of AI Artistry</h3>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+
+              <hr />
+              <h3>Is VC Funding Drying Up?</h3>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </div>
+          </div>
+        </section>
+
+        <section class="article">
+          <div>
+            01
+            <div class="detail">
+              Reviving Retro PCs What happens when old PCs are given modern
+              upgrades?
+            </div>
+          </div>
+          <div>
+            <div class="detail">
+              02 Top 10 Laptops of 2022 Our best picks for various needs and
+              budgets.
+            </div>
+          </div>
+          <div>
+            03 The Growth of Gaming How the pandemic has sparked fresh
+            opportunities.
+          </div>
+        </section>
       </div>
     </main>
   </body>
