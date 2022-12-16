@@ -44,15 +44,23 @@ a:hover {
   padding-bottom: 10px;
 }
 
+.nav .menu {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  column-gap: 25px;
+}
+
 .nav .menu a {
-  padding-left: 30px;
-  font-size: 14px;
-  color: var(--Dark-grayish-blue);
   text-decoration: none;
 }
 
 .nav .menu a:hover {
   color: var(--Soft-red);
+}
+
+.nav .menuIcn {
+  display: none;
 }
 
 .content {
@@ -198,6 +206,14 @@ a:hover {
 }
 
 @media (max-width: 550px) {
+  .nav .menu {
+    display: none;
+  }
+
+  .nav .menuIcn {
+    display: block;
+  }
+
   .headline {
     display: flex;
     flex-direction: column;
