@@ -41,7 +41,7 @@ a:hover {
   align-content: center;
   align-items: center;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 .nav .overlay-content {
@@ -93,8 +93,7 @@ a:hover {
 
 .headline h1 {
   grid-column: 1;
-  font-size: 47px;
-  /* font-size: max(3vw, 1.3rem); */
+  font-size: 60px;
   color: var(--Very-dark-blue);
   line-height: 1;
   margin: 0;
@@ -102,6 +101,7 @@ a:hover {
 
 .headline p {
   grid-column: 2;
+  line-height: 1.5;
   margin: 0;
 }
 
@@ -109,11 +109,12 @@ a:hover {
   background-color: var(--Soft-red);
   color: var(--Off-white);
   border: none;
-  width: 170px;
-  padding: 13px;
-  margin-top: 40px;
+  width: 180px;
+  padding: 15px;
+  margin-top: 38px;
   letter-spacing: 3px;
   transition: 0.3s ease-in;
+  font-size: 14px;
 }
 
 .headline .btn:hover {
@@ -133,16 +134,18 @@ a:hover {
 }
 
 .aside h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--Soft-orange);
 }
 
 .aside article:nth-of-type(n + 2) {
-  padding-top: 10px;
+  padding-top: 8px;
   border-top: 1px solid var(--Dark-grayish-blue);
 }
 
 .aside article h3 a {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
   color: var(--Off-white);
   text-decoration: none;
 }
@@ -152,9 +155,9 @@ a:hover {
 }
 
 .aside p {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   line-height: 1.5;
-  color: var(--Dark-grayish-blue);
+  color: var(--Grayish-blue);
 }
 
 .article {
@@ -216,6 +219,10 @@ a:hover {
     flex-direction: column;
   }
 
+  .headline h1 {
+    grid-column: 1;
+    font-size: 50px;
+
   .article {
     grid-template-columns: 1fr 1fr;
   }
@@ -237,10 +244,13 @@ a:hover {
   .nav .overlay-content {
     flex-flow: column;
     font-size: 18px;
-    color: var(--Dark-grayish-blue);
     row-gap: 20px;
     padding-top: var(--Gap);
     padding-left: var(--Gap);
+  }
+
+  .nav .overlay-content a {
+    color: var(--Very-dark-blue);
   }
 
   .nav .icnClose {
