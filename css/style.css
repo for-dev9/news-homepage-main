@@ -48,7 +48,8 @@ a:hover {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
-  column-gap: 25px;
+  column-gap: 35px;
+  font-size: 16px;
 }
 
 .nav .overlay-content a {
@@ -247,7 +248,7 @@ a:hover {
   .nav .overlay-content {
     flex-flow: column;
     font-size: 18px;
-    row-gap: 20px;
+    row-gap: var(--Gap);
     padding-top: var(--Gap);
     padding-left: var(--Gap);
   }
@@ -258,7 +259,7 @@ a:hover {
 
   .nav .icnClose {
     display: block;
-    padding: 33px 20px 20px 0;
+    padding: 33px 20px 60px 0;
     text-align: right;
   }
 
