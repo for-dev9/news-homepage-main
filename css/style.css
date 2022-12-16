@@ -72,6 +72,7 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--Gap);
+  padding-bottom: var(--Gap);
 }
 
 .headline {
@@ -93,7 +94,7 @@ a:hover {
 
 .headline h1 {
   grid-column: 1;
-  font-size: 60px;
+  font-size: 55px;
   color: var(--Very-dark-blue);
   line-height: 1;
   margin: 0;
@@ -115,6 +116,7 @@ a:hover {
   letter-spacing: 3px;
   transition: 0.3s ease-in;
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .headline .btn:hover {
@@ -221,7 +223,8 @@ a:hover {
 
   .headline h1 {
     grid-column: 1;
-    font-size: 50px;
+    font-size: 45px;
+  }
 
   .article {
     grid-template-columns: 1fr 1fr;
@@ -273,7 +276,7 @@ a:hover {
   }
 
   .headline h1 {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .article {
