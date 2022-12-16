@@ -32,19 +32,28 @@
           <div class="logo">
             <img src="/assets/images/logo.svg" />
           </div>
-          <div class="menu">
-            <a href="#">Home</a>
-            <a href="#">New</a>
-            <a href="#">Popular</a>
-            <a href="#">Trending</a>
-            <a href="#">Categories</a>
+          <div id="menu" class="overlay">
+            <div class="icnClose">
+              <a href="javascript:menuToggle('-100vw');">
+                <img src="/assets/images/icon-menu-close.svg" alt="menu" />
+              </a>
+            </div>
+            <div class="overlay-content">
+              <a href="#">Home</a>
+              <a href="#">New</a>
+              <a href="#">Popular</a>
+              <a href="#">Trending</a>
+              <a href="#">Categories</a>
+            </div>
           </div>
-          <div class="menuIcn">
-            <img src="/assets/images/icon-menu.svg" alt="menu" />
+          <div class="icnOpen">
+            <a href="javascript:menuToggle('0');">
+              <img src="/assets/images/icon-menu.svg" alt="menu" />
+            </a>
           </div>
         </nav>
 
-        <section class="content">
+        <section id="content" class="content">
           <div class="headline">
             <picture>
               <source
@@ -122,5 +131,26 @@
         </section>
       </div>
     </main>
+
+    <div id="modal" class="modal" onclick="menuToggle('-100vw');"></div>
+
+    <script type="application/javascript">
+      window.onresize = reportWindowSize;
+      function reportWindowSize() {
+        if (window.innerWidth > 550) {
+          menuToggle('-100vw');
+        }
+      }
+      function menuToggle(value) {
+        document.getElementById('menu').style.right = value;
+        if (value == '0') {
+          document.getElementById('modal').style.display = 'block';
+          document.getElementById('content').style.position = 'fixed';
+        } else {
+          document.getElementById('modal').style.display = 'none';
+          document.getElementById('content').style.position = 'static';
+        }
+      }
+    </script>
   </body>
 </html>
