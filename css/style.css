@@ -142,7 +142,7 @@ a:hover {
 }
 
 .aside article:nth-of-type(n + 2) {
-  padding-top: 25px;
+  padding-top: 5px;
   border-top: 1px solid var(--Dark-grayish-blue);
 }
 
