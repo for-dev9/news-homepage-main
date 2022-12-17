@@ -136,9 +136,10 @@ a:hover {
   padding: 0px 20px;
 }
 
-.aside h1 {
+.aside .aside-title h1 {
   font-size: 2.5rem;
   color: var(--Soft-orange);
+  padding-top: 0;
 }
 
 .aside article:nth-of-type(n + 2) {
@@ -146,14 +147,14 @@ a:hover {
   border-top: 1px solid var(--Dark-grayish-blue);
 }
 
-.aside article h3 a {
+.aside article h1 a {
   font-size: 1.2rem;
   letter-spacing: 1px;
   color: var(--Off-white);
   text-decoration: none;
 }
 
-.aside article h3 a:hover {
+.aside article h1 a:hover {
   color: var(--Soft-orange);
 }
 
