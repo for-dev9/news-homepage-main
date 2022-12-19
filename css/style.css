@@ -8,6 +8,27 @@
   --Gap: 30px;
 }
 
+.attribution {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  font-family: 'tahoma';
+  font-size: 13px;
+  text-align: center;
+  column-gap: 5px;
+}
+
+.attribution a {
+  color: var(--Very-dark-blue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--Soft-red);
+}
+
 body,
 html {
   margin: 0;
@@ -285,5 +306,9 @@ a:hover {
   .article {
     display: flex;
     flex-direction: column;
+  }
+
+  .attribution {
+    flex-flow: column;
   }
 }
